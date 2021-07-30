@@ -1,0 +1,572 @@
+/* Reset da página */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-family: 'Maven Pro', sans-serif;
+}
+img{
+    max-width: 100%;
+}
+html{
+    -webkit-tap-highlight-color: transparent;
+    scroll-behavior: smooth;
+}
+/* Cabeçalho */
+#header{
+    transition: .3s;
+    padding: 20px;
+    background-color: rgb(0, 0, 180);
+}
+#header .container-header{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#header .container-header .container-logo-search{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+#header .container-header .container-logo-search a{
+    color: white;
+    font-size: 1.1rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+}
+#header .container-header .container-logo-search a:hover{
+    color: rgb(207, 207, 207);
+}
+#header .container-header .container-logo-search .search form{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+#header .container-header .container-logo-search .search form input{
+    width: 660px;
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    padding: 7px 0px 7px 40px;
+    border-radius: 50px;
+    transition: .3s;
+}
+#header .container-header .container-logo-search .search form .btn-enviar{
+    position: relative;
+    background-color: transparent;
+    right: 45px;
+    border: none;
+    width: 40px;
+    padding: 5px;
+    font-size: 1rem;
+    color: black;
+    cursor: pointer;
+    transition: .3s;
+}
+#header .container-header .container-log-in-or-sign-up{
+    position: relative;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+    margin-right: 30px;
+    cursor: pointer;
+}
+#header .container-header .container-log-in-or-sign-up i{
+    font-size: 1.5rem;
+    color: white;
+}
+#header .container-header .container-log-in-or-sign-up i:last-child{
+    font-size: 0.8rem;
+}
+#header .container-header .container-log-in-or-sign-up p{
+    margin: 0;
+    color: white;
+    font-size: 1rem;
+}
+#header .container-header .container-log-in-or-sign-up a{
+    text-decoration: none;
+    color: white;
+    transition: .3s;
+}
+#header .container-header .container-log-in-or-sign-up a:hover{
+    color: rgb(207, 207, 207);
+}
+#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list{
+    display: none;
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    z-index: 1000;
+}
+#header .container-header .container-log-in-or-sign-up:hover > .sign-up-log-ip-list{
+    display: block;
+    top: 47px;
+    animation: fadeIn 1s;
+}
+@keyframes fadeIn{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+    transition: .3s;
+}
+#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box p{
+    color: black;
+    font-weight: 600;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item{
+    display: flex;
+    align-items: center;
+    gap: 0.7rem;
+    margin-bottom: 10px;
+}
+#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item i{
+    color: black;   
+}
+#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a{
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
+}
+#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a:hover{
+    color: rgb(207, 207, 207);
+}
+#header .container-header .container-shopping-cart{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4rem;
+}
+#header .container-header .container-shopping-cart a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: .3s;
+}
+#header .container-header .container-shopping-cart a:hover{
+    color: rgb(207, 207, 207);
+}
+#header .container-header .container-shopping-cart i{
+    color: white;
+    font-size: 1.5rem;
+}
+/* Menu */
+.container-nav{ 
+    background-color: rgb(0, 0, 180);
+    transition: .3s;
+    padding-bottom: 20px;
+}
+.container-nav .container-nav-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+}
+.container-nav .container-nav-width #menu-list{
+    display: flex;
+    list-style: none;
+    gap: 3rem;
+    margin: 0;
+    padding: 0;
+}
+.container-nav .container-nav-width #menu-list ul{
+    position: absolute;
+    z-index: 10000;
+    list-style: none;
+    padding: 0;
+}
+.container-nav .container-nav-width #menu-list ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 205px;
+    top: 20px;
+    background-color: rgb(0, 0, 180);
+    position: relative;
+    animation: fadeIn 1s;
+    padding: 10px;
+    transition: .3s;
+}
+.container-nav .container-nav-width #menu-list ul li a{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    transition: .3s;
+}
+.container-nav .container-nav-width #menu-list ul li a:hover{
+    background-color: black;
+    color: white;
+}
+.container-nav .container-nav-width #menu-list ul{
+    display: none;
+}
+.container-nav .container-nav-width #menu-list li:hover>ul{
+    display: block;
+}
+.container-nav .container-nav-width #menu-list li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+    transition: .3s;
+    font-weight: 600;
+}
+.container-nav .container-nav-width #menu-list li a:hover{
+    color: rgb(207, 207, 207);
+}
+/* Container geral, filtros e container roupas */
+.contanier-geral{
+    transition: .3s;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.contanier-geral .container-geral-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: .4rem;
+    margin: 0;
+    padding: 0;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul li a, .container-filters a, .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
+    width: 90%;
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    font-size: 1rem;
+    transition: .3s;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
+    width: 50%;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-Price a{
+    width: 60%;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-categorias .container-links a:last-child, .container-tamanhos a:last-child{
+    color: #0D6EFD;
+    margin: 0;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul li a:hover, .container-filters a:hover, .container-categorias .container-links a:hover, .container-custo-frete a:hover, .container-payments a:hover, .container-Price a:hover, .container-tamanhos a:hover{
+    color: rgb(207, 207, 207);
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-tamanhos .last:hover{
+    color: #0D6EFD;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul i{
+    font-size: 0.9rem;
+    color: black;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul li span{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs::after, .container-categorias .container-links::after, .container-filters::after, .container-custo-frete::after, .container-payments::after, .container-Price::after{
+    display: block;
+    content: '';
+    width: 90%;
+    height: 1px;
+    background-color: rgb(194, 194, 194);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-filters, .container-categorias, .container-categorias .container-links, .container-custo-frete, .container-payments, .container-Price, .container-tamanhos{
+    display: flex;
+    flex-direction: column;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-filters p, .container-categorias p, .container-custo-frete p, .container-payments p, .container-Price p, .container-tamanhos p{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-categorias .container-links a span, .container-custo-frete a span, .container-payments a span, .container-Price a span, .container-tamanhos a span, .container-filters a span{
+    color: rgb(119, 119, 119); 
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-categorias .container-links a, .container-Price a, .container-tamanhos a{
+    margin-bottom: 5px;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-Price .form-range-price{
+    width: 90%;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-Price .form-range-price .container-inputs-button{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+} 
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-Price .form-range-price .container-inputs-button .container-inputs{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: .3rem;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-Price .form-range-price .container-inputs-button .container-inputs input{
+    width: 50%;
+    outline: none;
+    border-radius: 3px;
+    border: 1px solid black;
+    padding: 5px 0px 5px 10px;
+    font-size: 0.9rem;
+}
+.contanier-geral .container-geral-width .container-breadcumbs-filters .container-Price .form-range-price .container-inputs-button .btn-range-price{
+    outline: none;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    background-color: rgb(0, 0, 219);
+}
+/* Section categoria-roupas */
+.contanier-geral .container-geral-width .container-categoria-roupas{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: .3s;
+    padding-top: 50px;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas h2{
+    font-size: 1.7rem;
+    color: black;
+    font-weight: bold;
+    margin: 0;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas h2:first-child::after{
+    display: block;
+    content: '';
+    height: 2px;
+    background-color: rgb(0, 0, 219);
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    gap: 3%;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product{
+    width: 32.3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border: 1px solid rgb(194, 194, 194);
+    border-radius: 10px;
+    transition: .3s;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product:hover{
+    box-shadow: 1px 1px 20px black;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a{
+    text-decoration: none;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .heart i{
+    position: absolute;
+    padding: 10px;
+    font-size: 1.5rem;
+    color: white;
+    display: none;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product:hover > .heart i{
+    display: block;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a i:hover{
+    color: rgb(168, 168, 168);
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a img{
+    width: 300px;
+    height: 250px;
+    border-radius: 10px 10px 0px 0px;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a h2{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding: 10px 0px 0px 20px;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product h3{
+    padding: 0px 0px 0px 20px;
+    color: rgb(0, 0, 219);
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product p{
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    color: black;
+    font-weight: 400;
+    padding: 0px 0px 0px 20px;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .btn-comprar{
+    width: 49%;
+    text-decoration: none;
+    border: none;
+    color: white;
+    background-color: rgb(0, 0, 219);
+    padding: 8px;
+    border-radius: 10px;
+    transition: .3s;
+    border: 1px solid rgb(0, 0, 219);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+.contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .btn-comprar:hover{
+    background-color: white;
+    border: 1px solid rgb(0, 0, 219);
+    color: black;
+}
+/* Paginação do site */
+#pagination{
+    transition: .3s;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+/* Footer */
+#footer-id{
+    transition: .3s;
+    padding-bottom: 40px;
+    padding-top: 50px;
+}
+#footer-id .container-footer-width{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#footer-id .container-footer-width .container-logo-p, .container-forms-payments{
+    width: 25%;
+}
+#footer-id .container-footer-width .container-logo-p a, .container-forms-payments p, .container-contacts .container-contacts-whatsapp p, .container-contacts-email p, .container-contacts-time p, .container-social-networks p{
+    color: black;
+    font-size: 1.3rem;
+    text-decoration: none;
+    font-weight: 600;
+    transition: .3s;
+    margin: 0;
+}
+#footer-id .container-footer-width .container-logo-p a:hover{
+    color: rgb(207, 207, 207);
+}
+#footer-id .container-footer-width .container-logo-p p{
+    max-width: 500px;
+    color: black;
+    font-size: 1rem;
+    text-decoration: none;
+    font-weight: 400;
+    transition: .3s;
+    margin: 0;
+    margin-top: 10px;
+}
+#footer-id .container-footer-width .container-forms-payments p{
+    margin-bottom: 10px;
+}
+#footer-id .container-footer-width .container-forms-payments i{
+    font-size: 2.8rem;
+    color: rgb(0, 0, 180);
+}
+#footer-id .container-footer-width .container-contacts{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#footer-id .container-footer-width .container-contacts i{
+    color: rgb(0, 0, 180);
+}
+#footer-id .container-footer-width .container-contacts p{
+    margin-bottom: 10px;
+}
+#footer-id .container-footer-width .container-contacts .container-contacts-whatsapp, .container-contacts-email, .container-contacts-time, .container-social-networks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#footer-id .container-footer-width .container-contacts hr{
+    width: 100%;
+    color: black;
+    margin: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#footer-id .container-footer-width .container-contacts hr:last-child{
+    margin-bottom: 0;
+}
+#footer-id .container-footer-width .container-contacts .container-contacts-whatsapp .whatsapp-info, .container-contacts-email .email-info, .container-contacts-time .time-info{
+    display: flex;
+    align-items: center;
+    gap: .4rem;
+}
+#footer-id .container-footer-width .container-contacts, .container-contacts-email .email-info, .container-contacts-time .time-info, .container-social-networks .social-networks-info{
+    font-size: 1.3rem;
+    color: black;
+}
+#footer-id .container-footer-width .container-contacts .container-contacts-whatsapp .whatsapp-info h4, .container-contacts-email .email-info h4, .container-contacts-time .time-info h4{
+    margin: 0;
+    color: black;
+    font-size: 1rem;
+}
+#footer-id .container-footer-width .container-social-networks p{
+    margin-bottom: 10px;
+}
+#footer-id .container-footer-width .container-social-networks .social-networks-info{
+    display: flex;
+    gap: 1rem;
+    transition: .3s;
+}
+#footer-id .container-footer-width .container-social-networks .social-networks-info a{
+    color: black;
+}
+#footer-id .container-footer-width .container-social-networks .social-networks-info i{
+    transition: .3s;
+    padding: 5px 5px 5px 5px;
+}
+#footer-id .container-footer-width .container-social-networks .social-networks-info i:first-child{
+    padding: 5px 5px 5px 0px;
+}
+#footer-id .container-footer-width .container-social-networks .social-networks-info a:hover{
+    color: rgb(0, 0, 180);
+}
