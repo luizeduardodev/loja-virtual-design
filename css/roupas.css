@@ -13,6 +13,15 @@ html{
     -webkit-tap-highlight-color: transparent;
     scroll-behavior: smooth;
 }
+.p-topo{
+    margin: 0;
+    text-align: center;
+    font-family: 'Maven Pro', sans-serif;
+    background-color: white;
+    padding: 2px;
+    font-weight: 400;
+    color: black;
+}
 /* Cabeçalho */
 #header{
     transition: .3s;
@@ -27,29 +36,32 @@ html{
     align-items: center;
     justify-content: space-between;
 }
-#header .container-header .container-logo-search{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
+#header .container-header .container-logo{
+    width: 15%;
 }
-#header .container-header .container-logo-search a{
+#header .container-header .container-logo a{
     color: white;
     font-size: 1.1rem;
     text-decoration: none;
     font-weight: 600;
     transition: .3s;
-}
-#header .container-header .container-logo-search a:hover{
+} 
+#header .container-header .container-logo a:hover{
     color: rgb(207, 207, 207);
 }
-#header .container-header .container-logo-search .search form{
+#header .container-header .container-geral-header{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+}
+#header .container-header .container-geral-header .search form{
     width: 100%;
     display: flex;
     align-items: center;
 }
-#header .container-header .container-logo-search .search form input{
-    width: 660px;
+#header .container-header .container-geral-header .search form input{
+    width: 500px;
     font-size: 1rem;
     font-weight: 500;
     border: none;
@@ -58,7 +70,7 @@ html{
     border-radius: 50px;
     transition: .3s;
 }
-#header .container-header .container-logo-search .search form .btn-enviar{
+#header .container-header .container-geral-header .search form .btn-enviar{
     position: relative;
     background-color: transparent;
     right: 45px;
@@ -70,7 +82,7 @@ html{
     cursor: pointer;
     transition: .3s;
 }
-#header .container-header .container-log-in-or-sign-up{
+#header .container-header .container-geral-header .container-log-in-or-sign-up{
     position: relative;
     width: 25%;
     display: flex;
@@ -80,34 +92,34 @@ html{
     margin-right: 30px;
     cursor: pointer;
 }
-#header .container-header .container-log-in-or-sign-up i{
+#header .container-header .container-geral-header .container-log-in-or-sign-up i{
     font-size: 1.5rem;
     color: white;
 }
-#header .container-header .container-log-in-or-sign-up i:last-child{
+#header .container-header .container-geral-header .container-log-in-or-sign-up i:last-child{
     font-size: 0.8rem;
 }
-#header .container-header .container-log-in-or-sign-up p{
+#header .container-header .container-geral-header .container-log-in-or-sign-up p{
     margin: 0;
     color: white;
     font-size: 1rem;
 }
-#header .container-header .container-log-in-or-sign-up a{
+#header .container-header .container-geral-header .container-log-in-or-sign-up a{
     text-decoration: none;
     color: white;
     transition: .3s;
 }
-#header .container-header .container-log-in-or-sign-up a:hover{
+#header .container-header .container-geral-header .container-log-in-or-sign-up a:hover{
     color: rgb(207, 207, 207);
 }
-#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list{
+#header .container-header .container-geral-header .container-log-in-or-sign-up .sign-up-log-ip-list{
     display: none;
     position: absolute;
     background-color: white;
     border-radius: 10px;
     z-index: 1000;
 }
-#header .container-header .container-log-in-or-sign-up:hover > .sign-up-log-ip-list{
+#header .container-header .container-geral-header .container-log-in-or-sign-up:hover > .sign-up-log-ip-list{
     display: block;
     top: 47px;
     animation: fadeIn 1s;
@@ -120,7 +132,7 @@ html{
         opacity: 1;
     }
 }
-#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box{
+#header .container-header .container-geral-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -128,53 +140,63 @@ html{
     padding: 20px;
     transition: .3s;
 }
-#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box p{
+#header .container-header .container-geral-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box p{
     color: black;
     font-weight: 600;
     font-size: 1rem;
     margin-bottom: 5px;
 }
-#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item{
+#header .container-header .container-geral-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item{
     display: flex;
     align-items: center;
     gap: 0.7rem;
     margin-bottom: 10px;
 }
-#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item i{
+#header .container-header .container-geral-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item i{
     color: black;   
 }
-#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a{
+#header .container-header .container-geral-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a{
     color: black;
+    text-decoration: underline;
     font-weight: 400;
     font-size: 1rem;
 }
-#header .container-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a:hover{
+#header .container-header .container-geral-header .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a:hover{
     color: rgb(207, 207, 207);
 }
-#header .container-header .container-shopping-cart{
+#header .container-header .container-geral-header .container-shopping-cart{
     display: flex;
     align-items: center;
     justify-content: center;
     gap: .4rem;
 }
-#header .container-header .container-shopping-cart a{
+#header .container-header .container-geral-header .container-shopping-cart a{
     text-decoration: none;
     color: white;
     font-size: 1.1rem;
     font-weight: 600;
     transition: .3s;
 }
-#header .container-header .container-shopping-cart a:hover{
+#header .container-header .container-geral-header .container-shopping-cart a:hover{
     color: rgb(207, 207, 207);
 }
-#header .container-header .container-shopping-cart i{
+#header .container-header .container-geral-header .container-shopping-cart i{
     color: white;
     font-size: 1.5rem;
+}
+/* Menu mobile */
+#header .container-menu-mobile{
+    display: none;
+}
+/* Btn mobile */
+#btn-mobile{
+    display: none;
 }
 /* Menu */
 .container-nav{ 
     background-color: rgb(0, 0, 180);
     transition: .3s;
+    padding-top: 10px;
     padding-bottom: 20px;
 }
 .container-nav .container-nav-width{
@@ -182,8 +204,8 @@ html{
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
-    align-items: center; 
-    justify-content: center; 
+    justify-content: center;
+    align-items: center;
 }
 .container-nav .container-nav-width #menu-list{
     display: flex;
@@ -243,21 +265,46 @@ html{
     padding-top: 30px;
     padding-bottom: 30px;
 }
+.contanier-geral .container-filteres-bottom{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.contanier-geral .container-filteres-bottom .breadcumbs ul{
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: .4rem;
+    padding: 0;
+}
+.contanier-geral .container-filteres-bottom .container-botton{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    display: none;
+}
+.contanier-geral .container-filteres-bottom .container-botton p{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 600;
+}
 .contanier-geral .container-geral-width{
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
 }
-.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    gap: .4rem;
-    margin: 0;
-    padding: 0;
+.contanier-geral .container-geral-width #container-breadcumbs-filterss{
+    display: none;
 }
-.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul li a, .container-filters a, .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
+.contanier-geral .breadcumbs ul li a, .container-filters a, .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
     width: 90%;
     text-decoration: none;
     color: black;
@@ -275,21 +322,21 @@ html{
     color: #0D6EFD;
     margin: 0;
 }
-.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul li a:hover, .container-filters a:hover, .container-categorias .container-links a:hover, .container-custo-frete a:hover, .container-payments a:hover, .container-Price a:hover, .container-tamanhos a:hover{
+.contanier-geral .breadcumbs ul li a:hover, .container-filters a:hover, .container-categorias .container-links a:hover, .container-custo-frete a:hover, .container-payments a:hover, .container-Price a:hover, .container-tamanhos a:hover{
     color: rgb(207, 207, 207);
 }
 .contanier-geral .container-geral-width .container-breadcumbs-filters .container-tamanhos .last:hover{
     color: #0D6EFD;
 }
-.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul i{
+.contanier-geral .breadcumbs ul i{
     font-size: 0.9rem;
     color: black;
 }
-.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs ul li span{
+.contanier-geral .breadcumbs ul li span{
     font-size: 1rem;
     font-weight: bold;
 }
-.contanier-geral .container-geral-width .container-breadcumbs-filters .breadcumbs::after, .container-categorias .container-links::after, .container-filters::after, .container-custo-frete::after, .container-payments::after, .container-Price::after{
+.container-categorias .container-links::after, .container-filters::after, .container-custo-frete::after, .container-payments::after, .container-Price::after{
     display: block;
     content: '';
     width: 90%;
@@ -352,7 +399,6 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    transition: .3s;
     padding-top: 50px;
 }
 .contanier-geral .container-geral-width .container-categoria-roupas h2{
@@ -371,25 +417,23 @@ html{
 }
 .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items{
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
 }
 .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1{
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
     gap: 3%;
 }
 .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product{
-    width: 32.3%;
+    width: 30%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     border: 1px solid rgb(194, 194, 194);
     border-radius: 10px;
     transition: .3s;
+    margin-bottom: 30px;
 }
 .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product:hover{
     box-shadow: 1px 1px 20px black;
@@ -403,6 +447,7 @@ html{
     font-size: 1.5rem;
     color: white;
     display: none;
+    transition: .3s;
 }
 .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product:hover > .heart i{
     display: block;
@@ -437,7 +482,7 @@ html{
     padding: 0px 0px 0px 20px;
 }
 .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .btn-comprar{
-    width: 49%;
+    width: 50%;
     text-decoration: none;
     border: none;
     color: white;
@@ -475,10 +520,12 @@ html{
     margin: 0 auto;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 5%;
 }
-#footer-id .container-footer-width .container-logo-p, .container-forms-payments{
-    width: 25%;
+#footer-id .container-footer-width > div{
+    width: 20%;
 }
 #footer-id .container-footer-width .container-logo-p a, .container-forms-payments p, .container-contacts .container-contacts-whatsapp p, .container-contacts-email p, .container-contacts-time p, .container-social-networks p{
     color: black;
@@ -492,7 +539,6 @@ html{
     color: rgb(207, 207, 207);
 }
 #footer-id .container-footer-width .container-logo-p p{
-    max-width: 500px;
     color: black;
     font-size: 1rem;
     text-decoration: none;
@@ -509,9 +555,7 @@ html{
     color: rgb(0, 0, 180);
 }
 #footer-id .container-footer-width .container-contacts{
-    width: 25%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 #footer-id .container-footer-width .container-contacts i{
@@ -549,6 +593,10 @@ html{
     color: black;
     font-size: 1rem;
 }
+#footer-id .container-footer-width .container-social-networks{
+    display: flex;
+    align-items: center;
+}
 #footer-id .container-footer-width .container-social-networks p{
     margin-bottom: 10px;
 }
@@ -569,4 +617,712 @@ html{
 }
 #footer-id .container-footer-width .container-social-networks .social-networks-info a:hover{
     color: rgb(0, 0, 180);
+}
+
+/* Responsividade tablet - 780px */
+@media(max-width:780px){
+    /* Cabeçalho */
+    #header{
+        padding: 25px 0px;
+    }
+    #header .container-header{
+        width: 95%;
+    }
+     #header .container-header .container-logo{
+        width: 100%;
+    }
+    #header .container-header .container-logo a{
+        font-size: 1.2rem;
+    }
+    /* Menu Mobile */
+    #container-menu-mobilee{
+        padding: 30px;
+        position: absolute;
+        position: fixed;
+        width: 50%;
+        top: 0px;
+        left: -600px;
+        height: 100%;
+        background-color: rgb(0, 0, 180);
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: hidden;
+        z-index: 10000;
+    }
+    #click.active #container-menu-mobilee{
+        left: 0px;
+        visibility: visible;
+    }
+    #btn-mobile{
+        display: flex;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: white;
+    }
+    #hamburger{
+        display: block;
+        width: 20px;
+        border-top: 2px solid;
+        color: white;
+    }
+    #hamburger::after, #hamburger::before{
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        transition: .3s;
+        position: relative;
+    }
+    #container-headerr.active #hamburger{
+        border-top-color: transparent;
+    }
+    #container-headerr.active #hamburger::before{
+        transform: rotate(135deg);
+    }
+    #container-headerr.active #hamburger::after{
+        transform: rotate(-135deg);
+        top: -7px;
+    }
+    /* Adicionando o Menu mobile */
+    #header .container-menu-mobile{
+        display: block;
+    }
+    /* Ajustando os itens do menu mobile */
+    #header .container-menu-mobile .container-menu-wrap .search{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .search form{
+        width: 100%;
+        display: flex;
+    }
+    #header .container-menu-mobile .container-menu-wrap .search form input{
+        width: 300px;
+        font-size: 1rem;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        padding: 6px 0px 6px 10px;
+        border-radius: 50px;
+        transition: .3s;
+    }
+    #header .container-menu-mobile .container-menu-wrap .search form .btn-enviar{
+        position: relative;
+        background-color: transparent;
+        right: 45px;
+        border: none;
+        width: 40px;
+        padding: 5px;
+        font-size: 1rem;
+        color: black;
+        cursor: pointer;
+        transition: .3s;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 10px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile i{
+        display: none;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile p{
+        margin: 0;
+        color: white;
+        font-size: 1.2rem;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile a{
+        text-decoration: none;
+        color: white;
+        transition: .3s;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile a:hover{
+        color: rgb(207, 207, 207);
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list hr{
+        display: none;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box{
+        display: flex;
+        flex-direction: column;
+        transition: .3s;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box p{
+        color: white;
+        font-weight: 600;
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item{
+        display: flex;
+        align-items: center;
+        gap: 0.7rem;
+        margin-bottom: 5px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item i{
+        color: white;  
+        font-size: 1.2rem; 
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a{
+        text-decoration: underline;
+        color: white;
+        font-weight: 400;
+        font-size: 1.1rem;
+        transition: .3s;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a:hover{
+        color: rgb(207, 207, 207);
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-shopping-cart{
+        display: flex;
+        gap: .4rem;
+        margin-bottom: 20px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-shopping-cart a{
+        text-decoration: none;
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: .3s;
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-shopping-cart a:hover{
+        color: rgb(207, 207, 207);
+    }
+    #header .container-menu-mobile .container-menu-wrap .container-shopping-cart i{
+        color: white;
+        font-size: 1.2rem;
+    }
+    #header .container-menu-mobile .container-menu-wrap .categorias-menu p{
+        color: white;
+        font-size: 1.3rem;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .categorias-menu .container-nav{
+        background-color: transparent;
+        display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    #header .container-menu-mobile .container-menu-wrap .categorias-menu .container-nav .container-nav-width{
+        justify-content: left;
+    }
+    #header .container-menu-mobile .container-menu-wrap .categorias-menu .container-nav #menu-list{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+    }
+    #header .container-menu-mobile .container-menu-wrap .categorias-menu .container-nav #menu-list li a{
+        font-family: sans-serif !important;
+        font-size: 1rem;
+        padding: 0px;
+        font-weight: normal;
+    }
+    #header .container-menu-mobile .container-menu-wrap .categorias-menu .container-nav #menu-list li a:hover{
+        color: rgb(207, 207, 207);
+    }
+    /* Retirando o menu desktop */
+    #header .container-header .container-geral-header{
+        display: none;
+    }
+    .container-nav{
+        display: none;
+    }
+    /* Container geral, filtros e container roupas */
+    .contanier-geral .container-filteres-bottom{
+        width: 95%;
+    }
+    .contanier-geral .breadcumbs ul{
+        width: 95%;
+        margin-bottom: 15px;
+    }
+    .contanier-geral .breadcumbs ul li a{
+        font-size: 1rem;
+    }
+    .contanier-geral .breadcumbs ul li span{
+        font-size: 1rem;
+    }
+    .contanier-geral .container-filteres-bottom .container-botton{
+        display: flex;
+        cursor: pointer;
+    }
+    .contanier-geral .container-filteres-bottom .container-botton p{
+        text-decoration: underline;
+    }
+    .contanier-geral .container-geral-width{
+        width: 95%;
+    }
+    .contanier-geral .container-geral-width .container-breadcumbs-filters{
+        display: none;
+    }
+    .contanier-geral .container-geral-width #container-breadcumbs-filterss{
+        display: block;
+    }
+    #container-breadcumbs-filterss{
+        position: absolute;
+        position: fixed;
+        width: 75%;
+        top: 0px;
+        left: -580px;
+        height: 100%;
+        background-color: rgb(0, 0, 180);
+        transition: .6s;
+        visibility: hidden;
+        overflow-y: scroll;
+        z-index: 10000;
+        padding: 30px;
+    }
+    #container-breadcumbs-filterss.active{
+        left: 0;
+        visibility: visible;
+    }
+    #container-breadcumbs-filterss::-webkit-scrollbar{
+        background-color: #DDD;
+        width: 7px;
+    }
+    #container-breadcumbs-filterss::-webkit-scrollbar-thumb{
+        background-color: rgb(0, 0, 80);
+    }
+    .container-filters a, .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
+        width: 90%;
+        color: white;
+        font-size: 1rem;
+    }
+    .contanier-geral .container-geral-width .container-breadcumbs-filters .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
+        width: 50%;
+    }
+    .contanier-geral .container-geral-width .container-breadcumbs-filters .container-Price a{
+        width: 50%;
+    }
+    .container-categorias .container-links::after, .container-filters::after, .container-custo-frete::after, .container-payments::after, .container-Price::after{
+        width: 90%;
+    }
+    .contanier-geral .container-geral-width .container-breadcumbs-filters .container-filters p, .container-categorias p, .container-custo-frete p, .container-payments p, .container-Price p, .container-tamanhos p{
+        font-size: 1.2rem;
+        color: white;
+    }
+    .contanier-geral .container-geral-width .container-breadcumbs-filters .container-categorias .container-links a span, .container-custo-frete a span, .container-payments a span, .container-Price a span, .container-tamanhos a span, .container-filters a span{
+        color: white; 
+    }
+    .contanier-geral .container-geral-width .container-breadcumbs-filters .container-categorias .container-links a:last-child, .container-tamanhos a:last-child{
+        color: black;
+        font-weight: 600;
+    }
+    /* Section categoria-roupas */
+    .contanier-geral .container-geral-width .container-categoria-roupas{
+        padding-top: 20px;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas h2{
+        font-size: 1.5rem;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas h2:first-child::after{
+        width: 70%;
+        margin: 0 auto;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1{
+        gap: 7%;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product{
+        width: 40%;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .heart i{
+        font-size: 1.3rem;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a img{
+        height: 250px;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a h2{
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+        padding: 5px 0px 0px 10px;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product h3{
+        padding: 0px 0px 0px 10px;
+        font-size: 1.3rem;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product p{
+        font-size: 0.9rem;
+        padding: 0px 0px 0px 10px;
+    }
+    .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .btn-comprar{
+        width: 45%;
+        padding: 5px;
+        font-size: 1rem;
+        margin-left: 10px;
+    }
+    /* Paginação do site */
+    #pagination{
+        padding-bottom: 0px;
+        padding-top: 20px;
+    }
+    /* Footer */
+    #footer-id{
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+    #footer-id .container-footer-width{
+        width: 95%;
+        gap: 0%;
+        justify-content: space-evenly;
+    }
+    #footer-id .container-footer-width > div{
+        width: 40%;
+        margin-bottom: 20px;
+    }
+    #footer-id .container-footer-width .container-logo-p a, .container-forms-payments p, .container-contacts .container-contacts-whatsapp p, .container-contacts-email p, .container-contacts-time p, .container-social-networks p{
+        font-size: 1.1rem;
+    }
+    #footer-id .container-footer-width .container-logo-p p{
+        font-size: 1rem;
+    }
+    #footer-id .container-footer-width .container-forms-payments{
+        text-align: right;
+    }
+    #footer-id .container-footer-width .container-forms-payments i{
+        font-size: 1.8rem;
+    }
+    #footer-id .container-footer-width .container-contacts .container-contacts-whatsapp .whatsapp-info h4, .container-contacts-email .email-info h4, .container-contacts-time .time-info h4{
+        font-size: 1rem;
+    }
+    #footer-id .container-footer-width .container-social-networks{
+        align-items: flex-end;
+    }
+    #footer-id .container-footer-width .container-social-networks .social-networks-info{
+        gap: 0.5rem;
+    }
+
+    /* Responsividade - 450px */
+    @media(max-width:450px){
+        .p-topo{
+            font-size: 0.9rem;
+        }
+        /* Menu Mobile */
+        #container-menu-mobilee{
+            width: 80%;
+            padding-left: 20px;
+        }
+        /* Container geral, filtros e container roupas */
+        .contanier-geral .breadcumbs ul{
+            margin-bottom: 0px;
+        }
+        #container-breadcumbs-filterss{
+            padding: 20px;
+        }
+        .contanier-geral .container-geral-width .container-breadcumbs-filters .container-filters p, .container-categorias p, .container-custo-frete p, .container-payments p, .container-Price p, .container-tamanhos p{
+            font-size: 1.1rem;
+        }
+        /* Section categoria-roupas */
+        .contanier-geral .container-geral-width .container-categoria-roupas h2{
+            font-size: 1.4rem;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas h2:first-child::after{
+            margin-bottom: 30px;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1{
+            gap: 9%;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product{
+            width: 45%;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .heart i{
+            font-size: 1.2rem;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a img{
+            height: 180px;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a h2{
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            padding: 5px 0px 0px 5px;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product h3{
+            padding: 0px 0px 0px 5px;
+            font-size: 1.2rem;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product p{
+            font-size: 0.9rem;
+            padding: 0px 0px 0px 5px;
+        }
+        .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .btn-comprar{
+            width: 60%;
+            padding: 4px;
+            font-size: 0.9rem;
+            margin-left: 5px;
+        }
+        /* Footer */
+        #footer-id{
+            padding-bottom: 20px;
+            padding-top: 20px;
+        }
+        #footer-id .container-footer-width > div{
+            width: 100%;
+        }
+        #footer-id .container-footer-width .container-logo-p a, .container-forms-payments p, .container-contacts .container-contacts-whatsapp p, .container-contacts-email p, .container-contacts-time p, .container-social-networks p{
+            font-size: 1.1rem;
+        }
+        #footer-id .container-footer-width .container-logo-p p{
+            margin-top: 5px;
+        }
+        #footer-id .container-footer-width .container-forms-payments{
+            text-align: left;
+        }
+        #footer-id .container-footer-width .container-forms-payments p{
+            margin-bottom: 5px;
+        }
+        #footer-id .container-footer-width .container-forms-payments i{
+            font-size: 1.7rem;
+        }
+        #footer-id .container-footer-width .container-contacts p{
+            margin-bottom: 5px;
+        }
+        #footer-id .container-footer-width .container-contacts hr{
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        #footer-id .container-footer-width .container-social-networks{
+            align-items: flex-start;
+        }
+        #footer-id .container-footer-width .container-social-networks .social-networks-info{
+            gap: 0.5rem;
+        }
+        #footer-id .container-footer-width .container-contacts, .container-contacts-email .email-info, .container-contacts-time .time-info, .container-social-networks .social-networks-info{
+            font-size: 1rem;
+        }
+        #footer-id .container-footer-width .container-social-networks p{
+            margin-bottom: 5px;
+        }
+
+         /* Responsividade 375px */
+         @media(max-width:375px){
+            #header .container-header .container-logo a{
+                font-size: 1.1rem;
+            }
+            /* Menu Mobile */
+            #container-menu-mobilee{
+                width: 75%;
+            }
+            /* Ajustando os itens do menu mobile */
+            #header .container-menu-mobile .container-menu-wrap .search form input{
+                font-size: 0.8rem;
+                padding: 5px 0px 5px 10px;
+            }
+            #header .container-menu-mobile .container-menu-wrap .search form .btn-enviar{
+                right: 0px;
+                color: white;
+                font-size: 0.9rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile p{
+                font-size: 1rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile strong{
+                font-size: 1rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile a{
+                font-size: 1rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box p{
+                font-size: 1.1rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item i{
+                font-size: 1.1rem; 
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a{
+                font-size: 1rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-shopping-cart a{
+                font-size: 1rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .container-shopping-cart i{
+                font-size: 1.1rem;
+            }
+            #header .container-menu-mobile .container-menu-wrap .categorias-menu p{
+                font-size: 1.2rem;
+            }
+            /* Container geral, filtros e container roupas */
+            .contanier-geral .breadcumbs ul li a{
+                font-size: 0.9rem;
+            }
+            .contanier-geral .breadcumbs ul li span{
+                font-size: 0.9rem;
+            }
+            .contanier-geral .container-filteres-bottom .container-botton p{
+                font-size: 0.9rem;
+            }
+            .contanier-geral .container-filteres-bottom .container-botton i{
+                font-size: 0.9rem;
+            }
+            #container-breadcumbs-filterss{
+                padding: 10px;
+            }
+            .container-filters a, .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
+                font-size: 0.9rem;
+            }
+            .contanier-geral .container-geral-width .container-breadcumbs-filters .container-filters p, .container-categorias p, .container-custo-frete p, .container-payments p, .container-Price p, .container-tamanhos p{
+                font-size: 1rem;
+            }
+            /* Section categoria-roupas */
+            .contanier-geral .container-geral-width .container-categoria-roupas h2{
+                font-size: 1.3rem;
+            }
+            .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .heart i{
+                font-size: 1.1rem;
+            }
+            .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a img{
+                height: 150px;
+            }
+            .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a h2{
+                font-size: 1.1rem;
+            }
+            .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product h3{
+                font-size: 1.2rem;
+            }
+            .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product p{
+                font-size: 0.9rem;
+            }
+            .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .btn-comprar{
+                width: 70%;
+                font-size: 0.9rem;
+            }
+            /* Footer */
+            #footer-id{
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+            #footer-id .container-footer-width .container-logo-p a, .container-forms-payments p, .container-contacts .container-contacts-whatsapp p, .container-contacts-email p, .container-contacts-time p, .container-social-networks p{
+                font-size: 1rem;
+            }
+            #footer-id .container-footer-width .container-forms-payments i{
+                font-size: 1.5rem;
+            }
+
+            /* Responsividade 320px */
+            @media(max-width:320px){
+                .p-topo{
+                    font-size: 0.8rem;
+                }
+                #header .container-header .container-logo a{
+                    font-size: 1rem;
+                }
+                /* Ajustando os itens do menu mobile */
+                #header .container-menu-mobile .container-menu-wrap .search form input{
+                    font-size: 0.6rem;
+                    padding: 5px 0px 5px 5px;
+                }
+                #header .container-menu-mobile .container-menu-wrap .search form .btn-enviar{
+                    font-size: 0.7rem;
+                }
+                #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile p{
+                    font-size: 0.9rem;
+                }
+                #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .container-user-mobile strong{
+                    font-size: 0.9rem;
+                }
+                #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box p{
+                    font-size: 1rem;
+                }
+                #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item i{
+                    font-size: 1rem; 
+                }
+                #header .container-menu-mobile .container-menu-wrap .container-log-in-or-sign-up .sign-up-log-ip-list .container-box .item a{
+                    font-size: 0.9rem;
+                }
+                #header .container-menu-mobile .container-menu-wrap .container-shopping-cart a{
+                    font-size: 0.9rem;
+                }
+                #header .container-menu-mobile .container-menu-wrap .container-shopping-cart i{
+                    font-size: 1rem;
+                }
+                #header .container-menu-mobile .container-menu-wrap .categorias-menu p{
+                    font-size: 1.1rem;
+                }
+                /* Container geral, filtros e container roupas */
+                .contanier-geral{
+                    padding-bottom: 20px;
+                }
+                .contanier-geral .breadcumbs ul li a{
+                    font-size: 0.8rem;
+                }
+                .contanier-geral .breadcumbs ul i{
+                    font-size: 0.8rem;
+                }
+                .contanier-geral .breadcumbs ul li span{
+                    font-size: 0.8rem;
+                }
+                .contanier-geral .container-filteres-bottom .container-botton p{
+                    font-size: 0.8rem;
+                }
+                .contanier-geral .container-filteres-bottom .container-botton i{
+                    font-size: 0.8rem;
+                }
+                .container-filters a, .container-categorias .container-links a, .container-custo-frete a, .container-payments a, .container-Price a, .container-tamanhos a{
+                    font-size: 0.8rem;
+                }
+                .contanier-geral .container-geral-width .container-breadcumbs-filters .container-filters p, .container-categorias p, .container-custo-frete p, .container-payments p, .container-Price p, .container-tamanhos p{
+                    font-size: 0.9rem;
+                }
+                /* Section categoria-roupas */
+                .contanier-geral .container-geral-width .container-categoria-roupas h2{
+                    font-size: 1.2rem;
+                }
+                .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .heart i{
+                    font-size: 1rem;
+                }
+                .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a img{
+                    height: 120px;
+                }
+                .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product a h2{
+                    font-size: 1rem;
+                    padding: 0px 0px 0px 4px;
+                }
+                .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product h3{
+                    font-size: 1.1rem;
+                    padding: 0px 0px 0px 4px;
+                }
+                .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product p{
+                    font-size: 0.8rem;
+                    padding: 0px 0px 0px 4px;
+                }
+                .contanier-geral .container-geral-width .container-categoria-roupas .container-group-items .card-product-1 .card-product .btn-comprar{
+                    width: 80%;
+                    font-size: 0.8rem;
+                    padding: 0px 0px 0px 4px;
+                }
+                /* Paginação do site */
+                #pagination{
+                    padding-top: 10px;
+                }
+                /* Footer */
+                #footer-id{
+                    padding-bottom: 20px;
+                    padding-top: 20px;
+                }
+                #footer-id .container-footer-width .container-logo-p p{
+                    font-size: 0.9rem;
+                }
+                #footer-id .container-footer-width .container-contacts > div > div > h4{
+                    font-size: 0.9rem;
+                }
+                #footer-id .container-footer-width .container-contacts .container-contacts-whatsapp .whatsapp-info h4{
+                    font-size: 0.9rem;
+                }
+                #footer-id .container-footer-width .container-logo-p a, .container-forms-payments p, .container-contacts .container-contacts-whatsapp p, .container-contacts-email p, .container-contacts-time p, .container-social-networks p{
+                    font-size: 1rem;
+                }
+                #footer-id .container-footer-width .container-forms-payments i{
+                    font-size: 1.3rem;
+                }
+            }
+         }
+    }
 }

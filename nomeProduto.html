@@ -27,86 +27,158 @@
   </head>
 
   <body>
-    <p style="margin: 0; text-align: center; font-family: 'Maven Pro', sans-serif; background-color: white; padding: 5px; font-weight: 400;"><strong>Enviamos</strong> para todo o Brasil</p>
+    <p class="p-topo"><strong>Enviamos</strong> para todo o Brasil</p>
 
-      <header id="header">
-          <div class="container-header">
-            <div class="container-logo-search">
-              <!-- Logo --->
-              <a href="index.html">Logo do site</a>
+    <header id="header">
+      <!-- Menu desktop --->
+      <div class="container-header" id="container-headerr">
+       <div class="container-logo">
+         <a href="index.html">Logo do site</a>
+       </div>
 
-               <!--- search box --->
-               <div class="search">
-                 <form action="#" method="GET">
-                     <input type="text" name="pesquisar" placeholder="Digite o que está procurando...">
-                     <button class="btn-enviar"><i class="fas fa-search"></i></button>
-                 </form>
+       <div class="container-geral-header">
+         <div class="search">
+           <form action="#" method="GET">
+               <input type="text" name="pesquisar" placeholder="Digite o que está procurando...">
+               <button class="btn-enviar"><i class="fas fa-search"></i></button>
+           </form>
+         </div>
+
+         <div class="container-log-in-or-sign-up">
+           <i class='fas fa-user-circle none'></i>
+           <div class="container-texts">
+             <p>Bem-vindo(a)</p>
+             <a href="#"><strong>Entrar</strong></a><p style="display: inline;"> ou</p>
+             <a href="#"><strong>Cadastrar</strong></a> 
+             <i class="fas fa-arrow-down" id="arrow"></i>
+           </div>
+
+           <div class="sign-up-log-ip-list">
+             <div class="container-box" id="box">
+                 <p>Olá visitante</p>
+                 <hr style="margin-bottom: 10px; width: 100%; margin-top: 0;">
+                 <div class="item">
+                   <i class='fas fa-user-circle'></i>
+                   <a href="#">Minha Conta</a>
+                 </div>
+                 <div class="item">
+                   <i class="fas fa-box"></i>
+                   <a href="#">Meus Pedidos</a>
+                 </div>
+                 <div class="item">
+                   <i class="fas fa-heart"></i>
+                   <a href="#">Meus desejos</a>
+                 </div>
                </div>
-            </div>
+           </div>
+         </div>
 
-            <div class="container-log-in-or-sign-up">
-              <i class='fas fa-user-circle'></i>
-              <div class="container-texts">
-                <p>Bem-vindo(a)</p>
-                <a href="#"><strong>Entrar</strong></a><p style="display: inline;"> ou</p>
-                <a href="#"><strong>Cadastrar</strong></a> 
-                <i class="fas fa-arrow-down"></i>
-              </div>
+         <div class="container-shopping-cart">
+           <a href="#">
+             <i class="fas fa-shopping-cart"></i>
+           </a>
+           <a href="#">Carrinho</a>
+         </div>
+       </div>
 
-              <div class="sign-up-log-ip-list">
-                <div class="container-box" id="box">
-                  <p>Olá visitante</p>
-                  <hr style="margin-bottom: 10px; width: 100%; margin-top: 0;">
-                  <div class="item">
-                    <i class='fas fa-user-circle'></i>
-                    <a href="#">Minha Conta</a>
-                  </div>
-                  <div class="item">
-                    <i class="fas fa-box"></i>
-                    <a href="#">Meus Pedidos</a>
-                  </div>
-                  <div class="item">
-                    <i class="fas fa-heart"></i>
-                    <a href="#">Meus desejos</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+       <button id="btn-mobile"><span id="hamburger"></span></button>
+     </div>
 
-            <div class="container-shopping-cart">
-              <a href="#">
-                <i class="fas fa-shopping-cart"></i>
-              </a>
-              <a href="#">Carrinho</a>
-            </div>
-          </div>
-      </header><!--- Fim do cabeçalho --->
+      <!--- Menu mobile --->
+      <div id="click">
+       <div class="container-menu-mobile" id="container-menu-mobilee">
+         <div class="container-menu-wrap">
+           <div class="search">
+             <form action="#" method="GET">
+                 <input type="text" name="pesquisar" placeholder="Digite o que está procurando...">
+                 <button class="btn-enviar"><i class="fas fa-search"></i></button>
+             </form>
+           </div>
 
-      <div class="container-nav">
-        <div class="container-nav-width">
-          <nav id="navbar">
-            <ul id="menu-list">
-              <li><a href="index.html">Home</a></li>
+           <div class="container-log-in-or-sign-up">
+             <div class="container-user-mobile">
+               <i class='fas fa-user-circle none'></i>
+               <div class="container-texts">
+                 <p>Bem-vindo(a)</p>
+                 <a href="#"><strong>Entrar</strong></a><p style="display: inline;"> ou</p>
+                 <a href="#"><strong>Cadastrar</strong></a> 
+                 <i class="fas fa-arrow-down" id="arrow"></i>
+               </div>
+             </div>
 
-              <li class="cate">
-                <a href="#">
-                  <i class="fas fa-bars" style="color: white;"></i>
-                  Todas as categorias</a>
-                <ul>
-                  <li><a href="Categoria-roupa.html">Roupas</a></li>
-                  <li><a href="#">Calçados</a></li>
-                  <li><a href="#">Acessórios</a></li>
-                </ul>
-              </li>
+             <div class="sign-up-log-ip-list">
+               <div class="container-box">
+                 <p>Olá visitante</p>
+                 <hr style="margin-bottom: 10px; width: 100%; margin-top: 0;">
+                 <div class="item">
+                   <i class='fas fa-user-circle'></i>
+                   <a href="#">Minha Conta</a>
+                 </div>
+                 <div class="item">
+                   <i class="fas fa-box"></i>
+                   <a href="#">Meus Pedidos</a>
+                 </div>
+                 <div class="item">
+                   <i class="fas fa-heart"></i>
+                   <a href="#">Meus desejos</a>
+                 </div>
+               </div>
+             </div>
+           </div>
 
-              <li><a href="#">Sobre</a></li>
-              <li><a href="#">Contato</a></li>
+           <div class="container-shopping-cart">
+             <a href="#">
+               <i class="fas fa-shopping-cart"></i>
+             </a>
+             <a href="#">Carrinho</a>
+           </div>
+
+           <div class="categorias-menu">
+             <p>Menu</p>
+             <hr style="width: 100%; background-color: white; margin: 0px;">
+             <div class="container-nav">
+               <div class="container-nav-width">
+                 <nav id="navbar">
+                   <ul id="menu-list">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="Categoria-roupa.html">Roupas</a></li>
+                     <li><a href="#">Calçados</a></li>
+                     <li><a href="#">Acessórios</a></li>
+                     <li><a href="#">Sobre</a></li>
+                     <li><a href="#">Contato</a></li>
+                   </ul>
+                 </nav>
+               </div>
+             </div><!--- Fim do menu --->
+           </div>
+         </div>
+       </div><!-- Fim do container menu mobile--->
+     </div>
+   </header><!--- Fim do cabeçalho --->
+
+   <div class="container-nav">
+    <div class="container-nav-width">
+      <nav id="navbar">
+        <ul id="menu-list">
+          <li><a href="index.html">Home</a></li>
+          <li class="cate">
+            <a href="#">
+              <i class="fas fa-bars" style="color: white;"></i>
+              Todas as categorias</a>
+            <ul>
+              <li><a href="Categoria-roupa.html">Roupas</a></li>
+              <li><a href="#">Calçados</a></li>
+              <li><a href="#">Acessórios</a></li>
             </ul>
-          </nav>
-        </div>
-      </div><!--- Fim do menu --->
+          </li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div><!--- Fim do menu --->
 
-      <main>
+      <main id="main">
         <section id="section-produto-info">
           <div class="contanier-geral">
             <div class="container-geral-width">
@@ -124,13 +196,15 @@
                       <img src="./img/Produtos/macacao.jpg" alt="2 imagem do produto" title="">
                   </div>
               </div>
-  
-              <div class="container-produto">
-                <div class="container-images">
-                    <img src="./img/Produtos/macacao.jpg" alt="Imagem central do produto" title="">
-                </div>
 
-                  <div class="container-geral-prduto">
+              <div class="container-images-slide-product">
+                <div class="container-images">
+                  <img src="./img/Produtos/macacao.jpg" alt="Imagem central do produto" title="">
+                </div>
+              </div>
+  
+              <div class="container-infos-product">
+                <div class="container-geral-prduto">
                       <div class="container-info-produto">
                           <p>Nike</p>
                           <h2>Macacão de Coelho para Bebê</h2>
@@ -204,7 +278,7 @@
                               </form>
                           </div>
                       </div>
-                  </div>
+                </div>
               </div>
             </div>
 
@@ -254,6 +328,7 @@
 
       <hr style="color: black; margin: 0;">
 
+      <!---Footer geral -->
       <footer id="footer-id">
         <div class="container-footer-width">
           <div class="container-logo-p">
@@ -308,6 +383,7 @@
 
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="./js/script.js"></script>
+      <script src="./js/menuMobile.js"></script>
   </body>
 
 </html>
